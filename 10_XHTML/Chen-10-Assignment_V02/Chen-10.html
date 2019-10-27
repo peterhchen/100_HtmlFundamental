@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+        <!-- <meta charset="utf-8" /> -->
+        <meta name="description" content="Survey Form in XHTML" />
+        <meta name="keywords" content="XHTML Form" />
+        <meta name="author" content="Peter H. Chen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="robots" content="noindex" />
+        <title>XHTML Forms</title> 
+        <style type="text/css">
+            table, td, th {
+                border-style: solid;
+                border-width: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Image Link, Tables, and Forms with XHTML headers</h1>
+        <h1>Image Link</h1>
+                <!-- Relative Links -->
+                <a href="Chen-module07-links.html">Home</a> | 
+                <a href="about.html">About</a> | 
+                <a href="contact.html">Contact</a> | 
+                <a href="history/history.html">History</a> |
+                <a href="gallery.html">Gallery</a> |
+                <!-- Email Links -->
+                <a href="mailto:peter.hp.chen@gmail.com?Subject=Request%20Information">Email</a> |
+                <!-- Telephone Links -->
+                <a href="tel:+1408-858-7657">Make Reservations</a> |
+                <!-- Absolute Links -->
+                <a href="https://www.qualcomm.com" target="_blank" rel="external">Qualcomm Home page</a>
+                <br />
+                <hr />
+                <!-- Image Mapping -->
+                <p>Red Sqaure is Peter's Birth Place. CLick to see Chen's Family</p>
+                <map name="bornPlace" id = "bornPlace">
+                    <area shape="rect" coords="230,85,262,115" href="history/history.html#familyHistory"
+                     alt="Click to Nan-Au" title="Peter's birth place" />
+                </map>
+                <img src="images/Map/TaiwanMap.PNG" alt="Map of Taiwan with Yi-Lan COunty" 
+                usemap="#bornPlace" />
+        <h1>Tables Assignment</h1>
+        <hr />
+        <h2>Character Entity Codes!</h2>
+        <table>
+        <caption>Monetary Character Entities</caption>
+        <tr>
+            <th>Monetary Symbol</th>
+            <th>HTML Code</th>
+            <th>Meaning</th>
+        </tr>
+        <tr>
+            <th>&yen;</th>
+            <td><code>&amp;yen;</code></td>
+            <td>Yen</td>
+        </tr>
+        <tr>
+            <th>&pound;</th>
+            <td><code>&amp;pound;</code></td>
+            <td>Pound Sterling</td>
+        </tr>
+        <tr>
+            <th>&euro;</th>
+            <td><code>&amp;euro;</code></td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <th>&cent;</th>
+            <td><code>&amp;cent;</code></td>
+            <td>Cent</td>
+        </tr>
+        </table>
+        <hr />
+        <h2>NFL Football League</h2>
+        <table>
+        <caption>American Football League Table</caption>
+        <tr>
+            <th colspan="2">NFC</th>
+            <th colspan="2">AFCC</th>
+        </tr>
+        <tr>
+            <th>Team</th>
+            <th>Division</th>
+            <th>Division</th>
+            <th>Team</th>
+        </tr>
+        <tr>
+            <td>Arizona Cardinals</td>
+            <th rowspan="4">NFC-Wset</th>
+            <th rowspan="4">AFC-Wset</th>
+            <td>Denver Broncos</td>
+        </tr>
+        <tr>
+            <td>SF 49'ers</td>
+            <td>Kansas City Chiefs</td>
+        </tr>
+        <tr>
+            <td>Seattle Seahawks</td>
+            <td>Oakland Raiders</td>
+        </tr>
+        <tr>
+            <td>Los Angeles Rams</td>
+            <td>Los Angeles Chargers</td>
+        </tr>
+        </table>
+        <hr />
+        <p>Please fill out this survery form to help us better server you in the future. </p>
+        <p>We are looking forward to hear from you.</p>
+        <h2>Fieldset, legend, and labels</h2>
+        <hr />
+        <form id="form1" name="AddressInformation" method="post" action="#" 
+        enctype="multipart/form-data">
+        <!--
+        https://www.w3schools.com/tags/att_form_enctype.asp
+        multipart/form-data:
+            No characters are encoded. 
+            This value is required when you are using forms that have a file upload control 
+        -->
+            <!-- Fieldset, legend, and lables -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                    <!-- Input fields for text -->
+                    <label for ="fname">First Name: </label>
+                    <input type="text" name="fname" id="fname" />
+                    <br /><br />
+                    <label for="lname">Last Name: </label>
+                    <input type="text" name="lname" id="lname" />
+                    <br /><br />
+                    <label for="zip">Zip Code: </label>
+                    <input type="text" name="zip" id="zip" maxlength="5" size="5" />
+                    <br /><br />
+                    <label for="password">Password: </label>
+                    <input type="password" name="passpword" id="password" />
+                    <br /><br />
+                    <!-- Menu/List-->
+                    <label for ="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="no-selection">&nbsp;</option>
+                        <option value="CA">California</option>
+                        <option value="WA">Washington</option>
+                        <option value="OR">Oregon</option>
+                        <option value="AR">Arizona</option>
+                        <option value="NV">Nevada</option>
+                        <option value="HI">Hawaii</option>
+                    </select>
+                    <br /><br />
+                    <!-- Optional Group -->
+                    <label for ="state2">What is your favorite state? </label>
+                    <select name="state2" id="state2">
+                        <optgroup label="Western States">
+                            <option value="no-selection">&nbsp;</option>
+                            <option value="CA">California</option>
+                            <option value="WA">Washington</option>
+                            <option value="OR">Oregon</option>
+                            <option value="AR">Arizona</option>
+                            <option value="NV">Nevada</option>
+                            <option value="HI">Hawaii</option>
+                        </optgroup>
+                        <optgroup label="Eastern States">
+                            <option value="NY">New York</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="VT">Vermont</option>
+                            <option value="ME">Maine</option>
+                            <option value="VA">Virgina</option>
+                        </optgroup> 
+                    </select>
+                    <br /><br />
+                    <!-- This is a list for Multiple selection -->
+                    <label for ="states">What state(s) did you live? </label>
+                    <!-- size specify 4 items display at a time -->
+                    <select name="states" id="states" size="4" multiple="multiple">
+                        <option value="CA">California</option>
+                        <option value="WA">Washington</option>
+                        <option value="OR">Oregon</option>
+                        <option value="AR">Arizona</option>
+                        <option value="NV">Nevada</option>
+                        <option value="HI">Hawaii</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <!-- Radio Button -->
+                <legend>Personal Information</legend>
+                Gender<br />
+                <label>
+                    <input type="radio" name="gender" value="female" />Female
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="gender" value="male" />Male
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="gender" value="no-response" checked="checked" />No Response
+                </label>
+                <br />
+                <!-- Checkbox -->
+                <p>What is your favorite coffee?</p>
+                <label>
+                    <input type="checkbox" name="fav-coffee" value="cappuccino" checked="checked"/>Cappuccino
+                </label>
+                <br />
+                <label>
+                    <input type="checkbox" name="fav-coffee" value="iced-coffee" />Iced-Coffee
+                </label>
+                <br />
+                <label>
+                    <input type="checkbox" name="fav-coffee" value="irish" />Irish
+                </label>
+                <br />
+                <label>
+                    <input type="checkbox" name="fav-coffee" value="latte" />Latte
+                </label>
+                <br />
+                <label>
+                    <input type="checkbox" name="fav-coffee" value="mocha" />Mocha
+                </label>
+                <br />
+                <br /><br />
+                <label for="comments">Comments:<br />
+                <textarea name="comments" id="comments" cols="80" rows="10"></textarea>
+                </label>
+                <br /><br />
+                <!-- File Upload -->
+                <label for="upload">Upload your file:</label>
+                <input type="file" id="upload" name="upload" />
+                <br />
+            </fieldset>
+            <!-- Submit and Reset -->
+            <input type="submit" value="Submit your form" />
+            <input type ="reset" value="Clear this form" />
+        </form>
+        <br />
+        Copyright &copy; 10/20/2019 by Peter H. Chen
+    </body>
+</html>
