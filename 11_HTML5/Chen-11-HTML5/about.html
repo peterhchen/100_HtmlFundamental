@@ -1,0 +1,93 @@
+<!Doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="description" content="Peter Chen's Family, Friend, and Kids selected images">
+        <meta name="keywords" content="HTML, images">
+        <meta name="author" content="Peter H. Chen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 100%;
+            height: 30px; /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            background-color: #f1f1f1;
+            height: 100px; /* only for demonstration, should be removed */
+        }
+        
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+            width: 100%;
+            height: auto;
+            }
+        }
+            
+    </style>
+    </head>
+    <body>
+        <header><h1>About Peter H. Chen</h1></header>
+        <!-- Relative Links -->
+        <nav>
+        <a href="Chen-11.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="contact.html">Contact</a> 
+        </nav>
+           
+        <section> 
+                <h2>About Peter Chen</h2>
+        <article>
+                <h2>This site is about the Profile of Peter Chen</h2>
+        </article>       
+        </section> 
+        <footer><p>Copyright &copy; 10/28/2019 by Peter H. Chen</p></footer> 
+    </body>
+</html>
