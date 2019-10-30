@@ -1,0 +1,131 @@
+<!Doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="description" content="Peter Chen's Contact Information">
+        <meta name="keywords" content="Address, Facebook, LintedIn, Skype, Phone number">
+        <meta name="author" content="Peter H. Chen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us!</title> 
+        <style>
+                * {
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                
+                /* Style the header */
+                header {
+                    background-color: #666;
+                    padding: 10px;
+                    text-align: center;
+                    font-size: 20px;
+                    color: white;
+                }
+                
+                /* Create two columns/boxes that floats next to each other */
+                nav {
+                    float: left;
+                    width: 100%;
+                    height: 30px; /* only for demonstration, should be removed */
+                    background: #ccc;
+                    padding: 20px;
+                }
+                
+                /* Style the list inside the menu */
+                nav ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+                
+                article {
+                    float: left;
+                    padding: 20px;
+                    width: 100%;
+                    background-color: #f1f1f1;
+                    height: 550px; /* only for demonstration, should be removed */
+                }
+                
+                /* Clear floats after the columns */
+                section:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                
+                /* Style the footer */
+                footer {
+                    background-color: #777;
+                    padding: 10px;
+                    text-align: center;
+                    color: white;
+                }
+                
+                /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+                @media (max-width: 600px) {
+                    nav, article {
+                    width: 100%;
+                    height: auto;
+                    }
+                }
+                table, td, th {
+                    border-style: solid;
+                    border-width: 1px;
+                }
+                    
+            </style>
+    </head>
+    <body>
+        <header><h1>Peter Contact Information</h1></header>
+        <nav>
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="contact.html">Contact</a>
+        </nav>
+    
+        <section>
+        <h2>Contact Information</h2>
+        <table>
+        <caption>Address, Facebook, LintedIn, Skype, Phone number</caption>
+        <tr>
+            <td>Home address 1</td>
+            <td>8626 Jade Coast Drive, San Diego, CA 92126</td>
+        </tr>
+        <tr>
+            <td>Home address 2</td>
+            <td>651 Calle Victoria, Sunnyvale, CA 94089</td>
+        </tr>
+        <tr>
+            <td>Home address 3</td>
+            <td>Chin San 23th Street, Hsinchu city, Taiwan</td>
+        </tr>
+        <tr>
+            <td>Email Address</td>
+            <td><a href="mailto:peter.hp.chen@gmail.com?Subject=Request%20Information">peter.hp.chen@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td>Facebook</td>
+            <td><a href="https://www.facebook.com/peter.hp.chen">Peter H. CHen Facebook</a></td>
+        </tr>
+        <tr>
+            <td>LinkedIn</td>
+            <td><a href="https://www.linkedin.com/in/peter-chen-26a4a4116/">Peter H. Chen LinkedIn</a></td>
+        </tr>
+        <tr>
+            <td>Phone/Skype</td>
+            <td><a href="tel:+1408-858-7657">1-(408)-858-7657</a></td>
+        </tr>
+        </table>
+        <hr>
+        <article>
+    
+        <h2>Peter current address</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.8369376742285!2d-117.1400843848147!3d32.90247928093425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf8db53d660fd%3A0xda24a8157ec78441!2s8626%20Jade%20Coast%20Dr%2C%20San%20Diego%2C%20CA%2092126!5e0!3m2!1sen!2sus!4v1572324576296!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+        
+        </article>       
+        </section> 
+        <footer><p>Copyright &copy; 10/29/2019 by Peter H. Chen</p></footer>
+    </body>
+</html>

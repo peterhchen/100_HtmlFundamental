@@ -1,0 +1,217 @@
+<!Doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="description" content="Peter Chen's Family, Friend, and selected images">
+        <meta name="keywords" content="HTML, images">
+        <meta name="author" content="Peter H. Chen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <title>Peter Chen's Family, Friend, and Kids</title> 
+        <style>
+            .textcenter {
+                text-align: center;
+            }  
+            address { 
+                display: block;
+                font-style: italic;
+                text-align: center;
+            } 
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            /* Style the header */
+            header {
+                background-color: #666;
+                padding: 10px;
+                text-align: center;
+                font-size: 20px;
+                color: white;
+            }
+            
+            /* Create two columns/boxes that floats next to each other */
+            nav {
+                float: left;
+                width: 100%;
+                height: 30px; /* only for demonstration, should be removed */
+                background: #ccc;
+                padding: 20px;
+            }
+            
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            article {
+                float: left;
+                padding: 20px;
+                width: 100%;
+                background-color: #f1f1f1;
+                height:1300px; /* only for demonstration, should be removed */
+            }
+            
+            /* Clear floats after the columns */
+            section:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            /* Style the footer */
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+                nav, article {
+                width: 100%;
+                height: auto;
+                }
+            }         
+        </style>  
+    </head>
+    <body>
+        <header><h1 class="textcenter">Peter's Hometown</h1>
+        </header>
+        <hr>
+        <!-- Relative Links -->
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="history/history.html">History</a> |
+        <a href="gallery.html">Gallery</a> |
+        <!-- Absolute Links -->
+        <a href="https://www.qualcomm.com" target="_blank" rel="external">Qualcomm Home page</a>
+        <br>
+        <hr>
+        <section> 
+        <h2>Taiwan Map</h2>
+        <article>
+        <h2>Nan-Au, Taiwan</h2>
+        <!-- Image Mapping -->
+        <p>Click Red Sqaure to see Peter's Family Information</p>
+        <map name="bornPlace">
+            <area shape="rect" coords="230,85,262,115" href="history/history.html#familyHistory"
+             alt="Click to Nan-Au" title="Peter's birth place">
+        </map>
+        <img src="images/Map/TaiwanMap.PNG" alt="Map of Taiwan with Yi-Lan COunty" 
+        usemap="#bornPlace">
+
+        <form id="form1" name="Address Information" method="post" action="#" 
+        enctype="multipart/form-data">
+            <!-- Fieldset, legend, and lables -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                    <!-- Input fields for text -->
+                    <label for ="fname">First Name: </label>
+                    <input type="text" name="fname" id="fname">
+                    <br><br>
+                    <label for="lname">Last Name: </label>
+                    <input type="text" name="lname" id="lname">
+                    <br><br>
+                    <label for="zip">Zip Code: </label>
+                    <input type="text" name="zip" id="zip" maxlength="5" size="5">
+                    <br><br>
+                    <label for="password">Password: </label>
+                    <input type="password" name="passpword" id="password">
+                    <br><br>
+                    <!-- Menu/List-->
+                    <label for ="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="no-selection">&nbsp;</option>
+                        <option value="CA">California</option>
+                        <option value="WA">Washington</option>
+                        <option value="OR">Oregon</option>
+                        <option value="AR">Arizona</option>
+                        <option value="NV">Nevada</option>
+                        <option value="HI">Hawaii</option>
+                    </select>
+                    <br><br>
+                    <!-- Optional Group -->
+                    <label for ="state2">What is your favorite state? </label>
+                    <select name="state2" id="state2">
+                        <optgroup label="Western States">
+                            <option value="no-selection">&nbsp;</option>
+                            <option value="CA">California</option>
+                            <option value="WA">Washington</option>
+                            <option value="OR">Oregon</option>
+                            <option value="AR">Arizona</option>
+                            <option value="NV">Nevada</option>
+                            <option value="HI">Hawaii</option>
+                        </optgroup>
+                        <optgroup label="Eastern States">
+                            <option value="NY">New York</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="VT">Vermont</option>
+                            <option value="ME">Maine</option>
+                            <option value="VA">Virgina</option>
+                        </optgroup> 
+                    </select>
+                    <br><br>
+            </fieldset>
+            <fieldset>
+                <!-- Radio Button -->
+                <legend>Personal Information</legend>
+                Gender<br>
+                <label>
+                    <input type="radio" name="gender" value="female">Female
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="gender" value="male">Male
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="gender" value="no-response" checked>No Response
+                </label>
+                <br>
+                <!-- Checkbox -->
+                <p>What is your favorite coffee?</p>
+                <label>
+                    <input type="checkbox" name="fav-coffee" value="cappuccino" checked>Cappuccino
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="fav-coffee" value="iced-coffee">Iced-Coffee
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="fav-coffee" value="irish">Irish
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="fav-coffee" value="latte">Latte
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="fav-coffee" value="mocha">Mocha
+                </label>
+                <br>
+                <br><br>
+                <label for="comments">Comments:<br>
+                <textarea name="comments" id="comments" cols="80" rows="10"></textarea>
+                </label>
+                <br><br>
+            </fieldset>
+            <!-- Submit and Reset -->
+            <input type="submit" value="Submit your form">
+            <input type ="reset" value="Clear this form">
+        </form>
+        </article>
+        </section> 
+        <hr>
+        Copyright &copy; 10/29/2019 by Peter H. Chen
+    </body>
+</html>

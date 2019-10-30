@@ -1,0 +1,160 @@
+<!Doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="description" content="Peter Chen's Family, Friend, and Kids selected images">
+        <meta name="keywords" content="HTML, images">
+        <meta name="author" content="Peter H. Chen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title> 
+        <style>
+                .textcenter {
+                    text-align: center;
+                }  
+                address { 
+                    display: block;
+                    font-style: italic;
+                    text-align: center;
+                } 
+                * {
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                
+                /* Style the header */
+                header {
+                    background-color: #666;
+                    padding: 10px;
+                    text-align: center;
+                    font-size: 20px;
+                    color: white;
+                }
+                
+                /* Create two columns/boxes that floats next to each other */
+                nav {
+                    float: left;
+                    width: 100%;
+                    height: 30px; /* only for demonstration, should be removed */
+                    background: #ccc;
+                    padding: 20px;
+                }
+                
+                /* Style the list inside the menu */
+                nav ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+                
+                article {
+                    float: left;
+                    padding: 20px;
+                    width: 100%;
+                    background-color: #f1f1f1;
+                    height:650px; /* only for demonstration, should be removed */
+                }
+                
+                /* Clear floats after the columns */
+                section:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                
+                /* Style the footer */
+                footer {
+                    background-color: #777;
+                    padding: 10px;
+                    text-align: center;
+                    color: white;
+                }
+                
+                /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+                @media (max-width: 600px) {
+                    nav, article {
+                    width: 100%;
+                    height: auto;
+                    }
+                }
+                .rightImage
+                {
+                    height:390px;
+                    width: 390px;                   
+                    position:relative;           
+                }
+                .rightImage:hover img
+                {
+                    height: 600px;
+                    width: 600px;
+                }         
+            </style>  
+    </head>
+    <body>
+        <header><h1 class="textcenter">Family Gallery</h1>
+        </header>
+        <nav>
+        <!-- Relative Links -->
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="history/history.html">History</a> |
+        <a href="gallery.html">Gallery</a> |
+        <!-- Anchored Links: Click to jump to id="idKid" Location -->
+        <a href="#idKid">Kids</a> |
+        <a href="history/history.html#familyHistory">Peter's Family History</a>
+        </nav>
+        <hr>
+         <h1>Family Photos</h1>
+        <!-- Relative Link -->
+        <div class="rightImage">
+        <img src="images/Family/Optimized_Scale-2017_FamilyKids.JPG" alt="2017 Family Reunion at Qualcoom, San Diego" width= "300" height="300">
+        </div>
+        <br>
+        <p><cite>Photo Taken by Rite Aide Employee at San Diego, 2017</cite></p>
+        <br>
+        <div class="rightImage">
+        <img src="images/Family/Scale_Marriage_1987-2017.JPG" alt="1987-2017 Marriage Anniversary Photo Hsinchu, Taiwan" width= "300" height="300">
+        <br>
+        <p><cite>Photo Taken by Hsinchu Studio, 2017</cite></p>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <h1>Friends' Photos</h1>
+        <div class="rightImage">
+        <img src="images/Friend/Scale_1979_HighSchool_YiLan_Taiwan.JPG" alt="1979 High School Classmate" width= "300" height="200">
+        <p><cite>High School Reunion, 1979</cite></p>
+        </div>
+        <br>
+        <div class="rightImage">
+        <img src="images/Friend/Scale_FriendVisitSanDiego.JPG" alt="2019 EMBA Couple Classmates Visited San Diego" width= "300" height="300">
+        <p><cite>Photo Taken by Irene M. Chen, 2019</cite></p>
+        </div>
+        <br>
+        <br>
+        <hr id="idKid">
+        <h1>Kids' Photos</h1>
+        <div class="rightImage">
+        <img src="images/Kids/Scale_Jason_1994_SanJose.JPG" alt="Jason, 1994 Hallooween at San Jose" width= "300" height="200">
+        <p><cite>Photo Taken by Irene M. Chen, Halloween, 1994 at Home (3216 Kawalker Lane, San Jose, CA 95127)</cite></p>
+        </div>
+        <br>
+        <br>
+        <div class="rightImage">
+        <img src="images/Kids/Scale_Jessica_Jasmine_Taoyuan_1995.JPG" alt="Jessica and Jasmine, 1995 at Taoyuan, Taiwan" width= "300" height="300">
+        <br>  
+        <br>
+        <br>     
+        <p><cite>Photo Taken by Irene M. Chen, 1995 at Taoyuan, Taiwan</cite></p>
+        </div>
+        <br>
+        <div class="rightImage">
+        <img src="images/Kids/Scale_Jonathan_TorreyPine_SanDiego_2017.JPG" alt="Jonathan, 2017 at Torrey Pin, San Diego" width= "300" height="200">
+        <p><cite>Photo Taken by Jessica J. Chen, 1995 at Taoyuan, Taiwan</cite></p>
+        </div>
+        <br>
+        <footer>Copyright &copy; 10/29/2019 by Peter H. Chen</footer>
+    </body>
+</html>

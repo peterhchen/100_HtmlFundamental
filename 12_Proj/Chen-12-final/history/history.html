@@ -1,0 +1,123 @@
+<!Doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="description" content="Peter Chen's Family History">
+        <meta name="keywords" content="Peter H. Chen, Family History">
+        <meta name="author" content="Peter H. Chen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Peter CHen's Family History</title> 
+        <style>
+            .textcenter {
+                text-align: center;
+            }  
+            address { 
+                display: block;
+                font-style: italic;
+                text-align: center;
+            } 
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            /* Style the header */
+            header {
+                background-color: #666;
+                padding: 10px;
+                text-align: center;
+                font-size: 20px;
+                color: white;
+            }
+            
+            /* Create two columns/boxes that floats next to each other */
+            nav {
+                float: left;
+                width: 100%;
+                height: 30px; /* only for demonstration, should be removed */
+                background: #ccc;
+                padding: 20px;
+            }
+            
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            article {
+                float: left;
+                padding: 20px;
+                width: 100%;
+                background-color: #f1f1f1;
+                height:250px; /* only for demonstration, should be removed */
+            }
+            
+            /* Clear floats after the columns */
+            section:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            /* Style the footer */
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+                nav, article {
+                width: 100%;
+                height: auto;
+                }
+            }         
+        </style>  
+    </head>
+    <body>
+        <header><h1>Family History Information</h1></header>
+        <!-- Relative Links -->
+        <nav>
+        <a href="../index.html">Home</a> | 
+        <a href="../about.html">About</a> | 
+        <a href="../contact.html">Contact</a> | 
+        <a href="../history/history.html">History</a> |
+        <a href="../gallery.html">Gallery</a>
+        </nav>
+    
+        <hr id="familyHistory">
+        <section>
+        <h2>Where is Peter Chen's Family Come From?</h2>
+        <article>
+        <h2>Family history of Peter Chen</h2>
+        <ul>
+        <li>How big of Taiwan? Taiwan is about 1/13 of California.</li>
+        <li>Peter's ancestors live in Taiwan for 450 years. Peter is the 16th generations.</li> 
+        <li>What language Taiwanese speak? Official language is Mandarin. Most people speak Taiwanese.</li>
+        <li>How long Taiwan belong to Japan? 53 years (same as 53 phonetic system).</li>
+        <li>Peter is born at Nan-Au Village with given name Hanping. </li>
+        <li>Nan-Au is a small village with 500 aboriginal people.</li>
+        <li>The aboriginal people and my family speak fluent Japanese.</li>
+        <li>How long KMT in China before control Taiwan? 38 years (same as Mandarin 38 phonetic system) </li>
+        </ul>
+
+        </article>
+        </section>
+        <hr>
+        <!-- Image Mapping -->
+        <map name="bornPlace">
+            <area shape="rect" coords="230,85,262,115" href="#familyHistory"
+             alt="Click to Nan-Au" title="Peter's birth place">
+        </map>
+        <img src="../images/Map/TaiwanMap.PNG" alt="Map of Taiwan with Yi-Lan County" 
+        usemap="#bornPlace">
+        <hr>
+        <footer><p>Copyright &copy; 10/29/2019 by Peter H. Chen</p></footer>
+    </body>
+</html>
